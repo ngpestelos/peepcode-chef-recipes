@@ -3,7 +3,9 @@ include_recipe "unicorn"
 
 package "libsqlite3-dev"
 
-gem_package "bundler"
+gem_package "bundler" do
+  version "1.2.4"
+end
 
 common = {:name => "kayak", :app_root => "/u/apps/kayak"}
 
